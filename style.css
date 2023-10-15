@@ -114,6 +114,7 @@ transition: 0.5s;
 position: absolute;
 bottom: 20%;
 left: 50%;
+text-align:center;
 transform: translateX(-50%);
 color: white;
 padding: 5px;
