@@ -1,7 +1,7 @@
 body {
-    font-family: 'poppins', sans-serif;
-    background-color: #212A3E;
-    color: #F1F6F9;
+  font-family: 'poppins', sans-serif;
+  background-color: #212A3E;
+  color: #F1F6F9;
 }
 
 .container-fluid{
@@ -10,33 +10,33 @@ padding-top: 0;
 }
 
 .navbar {
-  width: 100%;
-  background-color:  #212A3E;
-  overflow: auto;
+width: 100%;
+background-color:  #212A3E;
+overflow: auto;
 }
 
 .navbar a {
-  float: right;
-  padding: 12px;
-  color: #F1F6F9;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: lighter;
+float: right;
+padding: 12px;
+color: #F1F6F9;
+text-decoration: none;
+font-size: 15px;
+font-weight: lighter;
 }
 
 .navbar a:hover {
-  background-color: #394867;
+background-color: #394867;
 }
 
 .active {
-  background-color: #9BA4B5;
+background-color: #9BA4B5;
 }
 
 @media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+.navbar a {
+  float: none;
+  display: block;
+}
 }
 
 .section1{
@@ -51,47 +51,47 @@ padding-top: 30px;
 }
 
 h1{
-    font-size: 43px;
-    font-weight: bold;
+  font-size: 43px;
+  font-weight: bold;
 }
 
 p{
-    font-size: 24px;
-    font-weight: 300;
+  font-size: 24px;
+  font-weight: 300;
 
 }
 
 .section1 .textBox {
-    width: 60%;
-    }
+  width: 60%;
+  }
 
- .section1 .textBox p span{
-    text-shadow: yellow;
-    color: azure;
-    font-weight: 500;
-    font-size: 27px;
-    }
+.section1 .textBox p span{
+  text-shadow: yellow;
+  color: azure;
+  font-weight: 500;
+  font-size: 27px;
+  }
 
 .imgBox{
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right:50px;
-    margin: top 50px;
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right:50px;
+  margin: top 50px;
 }
 
 .imgBox img{
-    max-width: 340px
+  max-width: 340px
 
 }
 
 .thumb{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%);
-    display: flex;
-    
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+  display: flex;
+  
 }
 
 .thumb li {
@@ -103,19 +103,34 @@ transition: 0.5s;
 }
 
 .thumb li:hover{
-    transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 .thumb li img{
-    max-width: 60px;
+  max-width: 60px;
 }
 
+.thumbText {
+position: absolute;
+bottom: 20%;
+left: 50%;
+transform: translateX(-50%);
+color: white;
+padding: 5px;
+font-size: 17px;
+font-style: italic;
+text-shadow: 0 0 3px #f5ffff
+
+}
+
+
+
 .circle{
-   position: absolute; 
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background:#9BA4B5;
-   clip-path: circle(600px at right 800px);
+ position: absolute; 
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background:#9BA4B5;
+ clip-path: circle(600px at right 800px);
 }
