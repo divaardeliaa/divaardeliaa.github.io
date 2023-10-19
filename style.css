@@ -45,7 +45,9 @@ width: 90%;
 display: flex;
 justify-content: space-between ;
 align-items: center;
-
+margin-left: 50px;
+margin-top: 20px;
+padding-top: 30px;
 }
 
 h1{
@@ -60,7 +62,7 @@ p{
 }
 
 .section1 .textBox {
-  width: 54%;
+  width: 60%;
   }
 
 .section1 .textBox p span{
@@ -75,7 +77,7 @@ p{
   width: 600px;
   display: flex;
   justify-content: flex-end;
-  padding-right:20px;
+  padding-right:50px;
   margin: top 50px;
 }
 
