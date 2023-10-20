@@ -4,10 +4,14 @@ html{
 
 body{
   font-family: 'poppins', sans-serif ;
-  background-color: #212A3E;
+  background-image: linear-gradient(to right, #00030E , #212A3E);
   color: #F1F6F9;
 }
 
+h1{
+  font-size: 36px;
+  font-weight: 700;
+}
 /* .container-fluid{
 background-color: #212A3E;
 padding-top: 0;
@@ -15,7 +19,7 @@ padding-top: 0;
 
 .navbar {
 width: 100% ;
-background-color:  #212A3E ;
+background-color:  #121826 ;
 overflow: auto ;
 }
 
@@ -43,6 +47,12 @@ background-color: #9BA4B5;
 }
 }
 
+.presection{
+  background-image: url(bg1.jpeg);
+  background-color: #212A3E;
+  background-blend-mode: multiply;
+}
+
 .section1{
 position: relative;
 width: 90%;
@@ -50,12 +60,18 @@ display: flex;
 justify-content: space-between ;
 align-items: center;
 margin-left: 50px;
-margin-top: 20px;
+/* margin-top: 20px; */
 padding-top: 10px;
 }
 
-h1{
-  font-size: 43px;
+.section2{
+  background-image: url(bg.jpeg);
+ background-color: #212A3E;
+ background-blend-mode: multiply;
+}
+
+.textBox h1{
+  font-size: 64px;
   font-weight: bold;
 }
 
@@ -66,16 +82,20 @@ p{
 }
 
 .section1 .textBox {
-  width: 70%;
+  width: 60%;
   }
 
 .section1 .textBox p span{
   text-shadow: yellow;
   color: azure;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 21px;
   text-decoration: underline;
   }
+
+  .section1 .textBox p{
+    font-size: 18px;
+    }
 
 .imgBox{
   width: 500px;
@@ -83,7 +103,7 @@ p{
   justify-content: flex-end;
   padding-top: 0%;
   padding-right:50px;
-  margin: top 30px;
+  /* margin: top 30px; */
 }
 
 .imgBox img{
@@ -94,7 +114,7 @@ p{
 .thumb{
   position: absolute;
   left: 50%;
-  bottom: 15px;
+  bottom: 0px;
   transform: translate(-50%);
   display: flex;
   
@@ -118,7 +138,7 @@ transition: 0.5s;
 
 .thumbText {
 position: absolute;
-bottom: 20%;
+bottom: 15%;
 left: 50%;
 transform: translateX(-50%);
 color: white;
@@ -146,11 +166,12 @@ text-shadow: 0 0 3px #f5ffff
   text-align: center;
 }
 
+
 .subheader{
   text-decoration: underline;
   display: flex;
   justify-content: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   padding-top: 15px;
   padding-bottom: 15px;
