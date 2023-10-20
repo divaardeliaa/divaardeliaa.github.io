@@ -137,6 +137,7 @@ text-shadow: 0 0 3px #f5ffff
  height: 100%;
  background:#9BA4B5;
  clip-path: circle(600px at right 800px);
+ z-index: -10;
 }
 
 .header{
