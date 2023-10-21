@@ -6,6 +6,7 @@ body{
   font-family: 'poppins', sans-serif ;
   background-image: linear-gradient(to right, #00030E , #212A3E);
   color: #F1F6F9;
+  overflow-x:hidden;
 }
 
 h1{
@@ -65,7 +66,7 @@ padding-top: 10px;
 }
 
 .section2{
-  background-image: url(bg.jpeg);
+ background-image: url(bg.jpeg);
  background-color: #212A3E;
  background-blend-mode: multiply;
 }
@@ -102,7 +103,7 @@ p{
   display: flex;
   justify-content: flex-end;
   padding-top: 0%;
-  padding-right:50px;
+  padding-right:44px;
   /* margin: top 30px; */
 }
 
@@ -112,9 +113,9 @@ p{
 }
 
 .thumb{
-  position: absolute;
+  justify-content: center;
   left: 50%;
-  bottom: 0px;
+  bottom: -10px;
   transform: translate(-50%);
   display: flex;
   
@@ -138,7 +139,7 @@ transition: 0.5s;
 
 .thumbText {
 position: absolute;
-bottom: 15%;
+bottom: 23%;
 left: 50%;
 transform: translateX(-50%);
 color: white;
@@ -146,7 +147,6 @@ padding: 5px;
 font-size: 17px;
 font-style: italic;
 text-shadow: 0 0 3px #f5ffff
-
 }
 
 .circle{
@@ -161,9 +161,20 @@ text-shadow: 0 0 3px #f5ffff
 }
 
 .header{
-  background-color:#394867 ;
+  background-color:rgba(255, 255, 255, 0.5) ;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  width: 500px;
+}
+
+.header h1{
+  font-weight: 700;
+  text-shadow: #00030E;
+  color: #121826;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -178,6 +189,7 @@ text-shadow: 0 0 3px #f5ffff
 }
 .flip-card {
   background-color: transparent;
+  border-radius: 20px;
   width: 300px;
   height: 300px;
   perspective: 1000px;
@@ -185,16 +197,20 @@ text-shadow: 0 0 3px #f5ffff
 
 .flip-card-inner {
   position: relative;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-card-front, .flip-card-back {
@@ -203,11 +219,15 @@ text-shadow: 0 0 3px #f5ffff
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-card-back {
@@ -215,9 +235,96 @@ text-shadow: 0 0 3px #f5ffff
   color: white;
   text-align: center;
   transform: rotateY(180deg);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .education-flip{
   display: flex;
   justify-content: center;
+  border-radius: 20px;
+  
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 30px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
