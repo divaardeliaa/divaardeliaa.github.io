@@ -11,21 +11,26 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>5026221029/Diva Ardelia Alyadrus </title>
 
 </head>
 <body>
-    <!-- <div class="circle"></div> -->
+    <script href="index.js"></script>
+    <script src="index.js"></script>
+
+  <!-- navigation bar -->
         <div class="navbar d-flex justify-content-end fixed-top">
-            <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a> 
-            <a href="#portfolio"><i class="fa fa-fw fa-file"></i> Portfolio</a> 
-            <a href="#records"><i class="fa fa-fw fa-hourglass-half"></i> Records</a> 
+            <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="#about-me"><i class="fa fa-fw fa-user"></i> About me</a>
-            <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#records"><i class="fa fa-fw fa-hourglass-half"></i> Records</a> 
+            <a href="#portfolio"><i class="fa fa-fw fa-file"></i> Portfolio</a> 
+            <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>  
         </div>
-<section class="presection">
+
+    <section class="presection">
     <section class="section1" class="d-flex" id="home">
       
            <div class="textBox">
@@ -41,6 +46,7 @@
         
     </section>
 </section>
+    <!-- awalan thumbnail foto kecil -->
       <div class="container"> 
         <ul class="thumb">
             <li><img src="foto1.png" onclick="imgSlider('foto1.png');changeCircleColor('#9BA4B5')"alt="foto2"></li>
@@ -49,22 +55,10 @@
             <li><img src="foto4.png" onclick="imgSlider('foto4.png'); changeCircleColor('#F0F0F0')" alt="foto5"></li>
         </ul>
     </div> 
-        <div class="thumbText">👉🏻Click me to Pop! ⬇️</div>
-        
-        <script type="text/JavaScript">
-           
-            function imgSlider(anything){
-                document.querySelector('.foto-diva').src=anything;
-            }
-            function changeCircleColor(color) {
-                const circle = document.querySelector('.circle');
-                circle.style.background = color;
-            }
-         </script>
-
+        <div class="thumbText">👉🏻Click me to Pop! ⬇</div>
+    <!-- akhir thumbnail foto kecil -->     
 
     <section class="section2" id="about-me" >
-        <!-- <div class="bg">  -->
         <div class="container-fluid p-md-5">
             <!-- section2 header -->
             <div class="header"> <h1> About me </h1></div>
@@ -77,51 +71,54 @@
             <div class="row "> 
                 <div class="col-4 ">
                     <div class="education-flip">     
-                     <div class="flip-card ">
+                        <div class="flip-card ">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                            <img src="smp.jpg" alt="smpn-9-bekasi" style="width:300px;height:300px;border-radius: 20px;">
+                                <h1>SMPN 9 <br> BEKASI</h1>  
+                                <p>2016-2019</p> 
                             </div>
-                            <div class="flip-card-back">
-                            <h1>SMPN 9 <br> BEKASI</h1>  
-                            <p>2016-2019</p> 
+                            <img src="smp.jpg" alt="ITS" style="width:300px;height:300px;border-radius: 20px;">
+                            <div class="flip-card-back" style="padding-top: 3px;">
+                           
                             </div>
                         </div>
                       </div>   
                     </div>
                 </div>
+
                 <div class="col-4 ">
                     <div class="education-flip">     
                         <div class="flip-card ">
                         <div class="flip-card-inner">
-                            <div class="flip-card-back">
+                            <div class="flip-card-front">
                                 <h1>SMAN 81 Jakarta</h1> 
                                 <p>2019-2022</p> 
                             </div>
-                            <div class="flip-card-front">
-                                <img src="sma.jpg" alt="sman-81-jkt" style="width:300px;height:300px;border-radius: 20px;">
-                            
+                            <img src="sma.jpg" alt="ITS" style="width:300px;height:300px;border-radius: 20px;">
+                            <div class="flip-card-back" style="padding-top: 3px;">
+                           
                             </div>
                         </div>
                       </div>   
                     </div>
                 </div>
+
                 <div class="col-4 ">
                     <div class="education-flip">     
                         <div class="flip-card ">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                            <img src="Kuliah.jpg" alt="ITS" style="width:300px;height:300px;border-radius: 20px;">
+                                <h1>Institut Teknologi <br> Sepuluh Nopember</h1>  
+                                <p>2022-Sekarang</p>
                             </div>
+                            <img src="Kuliah.jpg" alt="ITS" style="width:300px;height:300px;border-radius: 20px;">
                             <div class="flip-card-back" style="padding-top: 3px;">
-                            <h1>Institut Teknologi <br> Sepuluh Nopember</h1>  
-                            <p>2022-Sekarang</p>
+                           
                             </div>
                         </div>
                       </div>   
                     </div>
                 </div>
-               <!-- </div> -->
             </div>
              <!--end of education  -->
             <br><br>
@@ -129,6 +126,7 @@
             <div class="sec2" style="color: black;">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
                 <div  class="col-4" style="background-color: rgb(240, 241, 243); border-radius:20px; max-width: 330px;margin-left: 5%; margin-right: -25px;">
+                   <!-- skills section -->
                     <div class="subheader">Skills&Interests</div> 
                     <div class="skills d-flex justify-content-center "style="margin-left: -30px;">
                         <ul>
@@ -138,6 +136,7 @@
                           </ul>
                     </div>
                 </div>
+                <!-- hobbies section -->
                 <div class="col-4 " style="background-color: rgba(150, 157, 169, 0.955); border-radius:20px;max-width: 330px;margin-right: 30px; ">
                     <div class="subheader">Hobbies</div>
                     <div class="hobbies d-flex justify-content-center" style="margin-left: -30px;">
@@ -148,9 +147,10 @@
                           </ul>
                     </div> 
                 </div>
+                <!-- Experiences section -->
                 <div class="col-4 " style="background-color: rgb(240, 241, 243); border-radius:20px;max-width: 330px;margin-left: -50px;margin-right: 60px">
                     <div class="subheader">Experiences</div> 
-                    <div class="hobbies d-flex justify-content-center" style="margin-left: -30px;">
+                    <div class="experiences d-flex justify-content-center" style="margin-left: -30px;">
                         <ul>
                             <li>Magang HMSI </li>
                             <li>ISE</li>
@@ -158,7 +158,7 @@
                           </ul>
                     </div> 
                 </div>
-                
+    
              </div>
             </div> 
     </div>
@@ -219,57 +219,59 @@
          </div>
          </section>    
          <br><br><br>
-    <section class="section4" id="portfolio">   
-    <div class="container-fluid p-md-5 ">
-       
-        <div class="header"><h1>Portfolio</h1> </div>
-        <br><br>
-
-        <div class="row">
-            <div class="col-5">
-                <div class="podcast">
-                <div class="subheader justify-content-lg-start">Podcast moderator</div>
-                <div class="card">
-                <img src="pangarsa.png" alt="Podcast-pangarsa">
-                <h1>PANGARSA</h1>
-                <p>Podcast dari program kerja Pengurus OSIS SMAN 81 Jakarta</p>
-                <p><button> <a href="https://www.instagram.com/reel/CHUYVt7r5wG/"></a>Listen here</button></p>
-                </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="row">
-                    <div class="subheader"> Sertifikat </div>
-                    <div class="scroll-container rounded-sm" id="sertif">
-                        <img src="ise.png" alt="sertif">
-                        <img src="sertif5.png" alt="sertif">
-                        <img src="sertif4.jpeg" alt="sertif">
-                        <img src="sertidd3.jpeg" alt="sertif">
-                        <img src="sertif2.jpeg" alt="sertif">
-                        <img src="sertif1.jpeg" alt="sertif">   
-                    </div>
-
-                    
+         <section class="section4" id="portfolio">   
+            <div class="container-fluid p-md-5 ">
+               
+                <div class="header"><h1>Portfolio</h1> </div>
+                <br><br>
         
-                </div>
                 <div class="row">
-                    <div class="subheader"> Desain</div>
-                    <div class="desain">
-                        <div class="container">
-                            <img src="img3.jpg" alt="Avatar" class="image">
-                            <div class="overlay">
-                            <div class="text">Hello World</div>
+                    <div class="col-5">
+                        <div class="podcast">
+                        <div class="subheader justify-content-lg-start">Podcast moderator</div>
+                        <div class="card">
+                        <img src="pangarsa1.png" alt="Podcast-pangarsa">
+                        <h1>PANGARSA</h1>
+                        <p>Pangarsa adalah sebuah Podcast yang merupakan program kerja Pengurus OSIS SMAN 81 Jakarta</p>
+                        <p><button> <a href="https://www.instagram.com/reel/CHUYVt7r5wG/"></a>Listen here</button></p>
+                        </div>
                         </div>
                     </div>
-                </div>
-        </div> 
-    </div>
-    </section> 
-    
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="subheader"> Desain</div>
+                            <div class="desain">
+                                <div class="container">
+                                    <div class="scroll-container rounded-sm" id="sertif">
+                                        <img src="Song-fess-1.png" alt="desain-1">
+                                        <img src="Song-fess-4.png" alt="desain2">
+                                        <img src="Song-fess-2.png" alt="desain3">
+                                        <img src="H-1.png" alt="sertif">
+                                        <img src="FORDS.jpg" alt="sertif">
+                                        <img src="SNAPSSS.png" alt="sertif">   
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="row">
+                            <div class="subheader"> Sertifikat </div>
+                            <div class="scroll-container rounded-sm" id="sertif">
+                                <img src="ise.png" alt="sertif">
+                                <img src="sertif5.png" alt="sertif">
+                                <img src="sertif4.jpeg" alt="sertif">
+                                <img src="sertidd3.jpeg" alt="sertif">
+                                <img src="sertif2.jpeg" alt="sertif">
+                                <img src="sertif1.jpeg" alt="sertif">   
+                            </div>
+                        </div>
+                </div> 
+            </div>
+            </section>
     <section class="section5" id="contact">
         <div class="container-fluid p-md-5">
             <div class="header"><h1>Contact</h1></div>
-            <form name="myForm" action="https://www.linkedin.com/in/divardl/" onsubmit="return validateForm()" method="post">
+            <form name="contactForm" action="https://www.linkedin.com/in/divardl/" onsubmit="return validateForm()" method="post">
                 
                 <div> 
                   <label class="form-input"> <b>Name</b> </label>
@@ -292,31 +294,7 @@
               </form>
         </div>
 
-        <script>
-        
-            function validateForm() {
-  
-            var name = document.getElementById("fname");
-            var mail = document.getElementById("email");
-            var message = document.getElementById("message");
-
-        
-            if (name.value.trim() === '') {
-                alert('Full Name is required');
-                name.focus();
-                return false;
-            }
-
-        
-            var email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email.test(mail.value)) {
-                alert('Invalid Email Address');
-                email.focus();
-                return false;
-            
-            }
-        }
-        </script>
+    
     </section>
 
     <section class="footer">
@@ -331,8 +309,9 @@
     </div>
     </section>
 
+    <script src="index.js"></script>
 </body>
 </html>
 
 </body>
-</html> 
+</html>
