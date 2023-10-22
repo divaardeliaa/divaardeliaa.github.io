@@ -113,20 +113,22 @@ p{
 }
 
 .thumb{
+  display: flex;
   justify-content: center;
-  left: 50%;
   bottom: -10px;
   transform: translate(-50%);
-  display: flex;
+  margin-left: 50%;
   
 }
 
 .thumb li {
 list-style: none;
 display: inline-block;
+justify-content: center;
 margin: 0 22px;
 cursor: pointer;
 transition: 0.5s;
+border:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
 }
 
 .thumb li:hover{
@@ -137,9 +139,25 @@ transition: 0.5s;
   max-width: 60px;
 }
 
+.skills li{
+  list-style: none;
+  text-align: justify;
+
+}
+
+.hobbies li{
+  list-style: none;
+  text-align: justify;
+  
+}
+
+.experiences li{
+  text-align: justify;
+  justify-content: center;
+}
 .thumbText {
 position: absolute;
-bottom: 23%;
+bottom: 30%;
 left: 50%;
 transform: translateX(-50%);
 color: white;
@@ -162,11 +180,15 @@ text-shadow: 0 0 3px #f5ffff
 
 .header{
   background-color:rgba(255, 255, 255, 0.5) ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  margin: auto;
   text-align: center;
-  width: 500px;
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .header h1{
@@ -190,6 +212,7 @@ text-shadow: 0 0 3px #f5ffff
 .flip-card {
   background-color: transparent;
   border-radius: 20px;
+  padding-bottom: 50px;
   width: 300px;
   height: 300px;
   perspective: 1000px;
@@ -197,13 +220,13 @@ text-shadow: 0 0 3px #f5ffff
 
 .flip-card-inner {
   position: relative;
+  padding-bottom: 50px;
   border-radius: 20px;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -215,6 +238,7 @@ text-shadow: 0 0 3px #f5ffff
 
 .flip-card-front, .flip-card-back {
   position: absolute;
+  padding-bottom: 50px;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -231,12 +255,14 @@ text-shadow: 0 0 3px #f5ffff
 }
 
 .flip-card-back {
+  padding-top: 50px;
   background-color: #9BA4B5;
   color: white;
   text-align: center;
   transform: rotateY(180deg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .education-flip{
@@ -245,86 +271,169 @@ text-shadow: 0 0 3px #f5ffff
   border-radius: 20px;
   
 }
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+.gallery{
+  display: flex;
+  justify-content: center;
+}
+.section3 .carousel{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.section3 .carousel-inner img{
+  width: 600px;
+  height: 400px;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
+div.scroll-container {
+  background-image: linear-gradient(to right, #212A3E,#394867 );
+  border-radius: 12px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 30px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+div.scroll-container img {
+  border-radius: 12px;
+  padding: 10px;
+  width: 400px;
+  height: 290px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.podcast{
+ padding-left: 22%;
+ padding-top: 0%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
+.card {
+  color: #394867;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border-radius: 12px;
+  border: #9BA4B5;
+  outline: 0;
+  padding: 12px;
   color: white;
+  background-color: #061b2e;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.card button:hover {
+  opacity: 0.7;
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+.desain .container {
+  position: relative;
+  width: 50%;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #394867;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.desain .container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.desain .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section3{
+    background-image: url(bg2.jpeg);
+    background-color: #212A3E;
+    background-blend-mode: multiply;
+  
+}
+
+.section4{
+  background-image: url(bg3.jpeg);
+  background-color: #212A3E;
+  background-blend-mode: multiply;
+
+}
+
+.form-input{
+  margin-top: 15px;
+  display: block;
+  padding-top: 5;
+  appearance: none;
+  background-clip: padding-box;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+.form-input .btn{
+  background-color: #cda45e;
+  size: 60px;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  display: block;
+
+}
+
+.form-input .btn:hover {
+  background-color: #e6d7d7;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: #394867;
+  justify-content: center;
+  display: flex;
+}
+
+.footer li{
+  display: inline-block;
+  margin: 10 10px;
+  list-style: none;
+  
 }
