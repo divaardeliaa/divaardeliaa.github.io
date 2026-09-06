@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Back to top">DAA<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="sr-only">Buka menu</span><span></span><span></span></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="sr-only">Open menu</span><span></span><span></span></button>
     <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
       <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#community">Community</a><a href="#contact">Contact</a>
     </nav>
+    <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language to Indonesian"><span>EN</span><i>/</i><span>ID</span></button>
   </header>
 
   <main id="main-content">
@@ -34,14 +35,14 @@
       <div class="hero__visual">
         <div class="hero__shape hero__shape--one"></div><div class="hero__shape hero__shape--two"></div>
         <figure class="portrait-card">
-          <span class="portrait-card__frame"><img class="portrait-card__image portrait-card__image--professional" src="assets/hero-professional-03.png" alt="Diva Ardelia Alyadrus mengenakan blazer cokelat" data-hero-image style="--portrait-scale: .95; --portrait-offset: 0px"></span>
-          <figcaption>Tap a moment below</figcaption>
+          <span class="portrait-card__frame"><img class="portrait-card__image portrait-card__image--professional" src="assets/hero-professional-03.png" alt="Diva Ardelia Alyadrus wearing a brown blazer" data-hero-image style="--portrait-scale: .95; --portrait-offset: 0px"></span>
+          <figcaption>Choose a portrait below</figcaption>
         </figure>
-        <div class="portrait-picker" aria-label="Pilih foto Diva">
-          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-04.png" data-alt="Diva Ardelia Alyadrus mengenakan setelan formal" data-portrait-scale=".95" data-portrait-offset="0px"><img src="assets/hero-professional-04.png" alt=""><span class="sr-only">Potret setelan formal</span></button>
-          <button class="portrait-picker__button is-active" type="button" data-image="assets/hero-professional-03.png" data-alt="Diva Ardelia Alyadrus mengenakan blazer cokelat" data-portrait-scale=".95" data-portrait-offset="0px"><img src="assets/hero-professional-03.png" alt=""><span class="sr-only">Potret blazer cokelat</span></button>
-          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-01.png" data-alt="Diva Ardelia Alyadrus dalam potret profesional pertama" data-portrait-scale=".92" data-portrait-offset="0px"><img src="assets/hero-professional-01.png" alt=""><span class="sr-only">Potret profesional pertama</span></button>
-          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-02.png" data-alt="Diva Ardelia Alyadrus mengenakan jaket ITS" data-portrait-scale=".92" data-portrait-offset="0px"><img src="assets/hero-professional-02.png" alt=""><span class="sr-only">Potret profesional kedua</span></button>
+        <div class="portrait-picker" aria-label="Choose Diva's portrait">
+          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-04.png" data-alt-en="Diva Ardelia Alyadrus wearing formal attire" data-alt-id="Diva Ardelia Alyadrus mengenakan setelan formal" data-label-en="Formal portrait" data-label-id="Potret formal" data-portrait-scale=".95" data-portrait-offset="0px" aria-label="Formal portrait"><img src="assets/hero-professional-04.png" alt=""></button>
+          <button class="portrait-picker__button is-active" type="button" data-image="assets/hero-professional-03.png" data-alt-en="Diva Ardelia Alyadrus wearing a brown blazer" data-alt-id="Diva Ardelia Alyadrus mengenakan blazer cokelat" data-label-en="Brown blazer portrait" data-label-id="Potret blazer cokelat" data-portrait-scale=".95" data-portrait-offset="0px" aria-label="Brown blazer portrait"><img src="assets/hero-professional-03.png" alt=""></button>
+          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-01.png" data-alt-en="Diva Ardelia Alyadrus in her first professional portrait" data-alt-id="Diva Ardelia Alyadrus dalam potret profesional pertama" data-label-en="First professional portrait" data-label-id="Potret profesional pertama" data-portrait-scale=".92" data-portrait-offset="0px" aria-label="First professional portrait"><img src="assets/hero-professional-01.png" alt=""></button>
+          <button class="portrait-picker__button" type="button" data-image="assets/hero-professional-02.png" data-alt-en="Diva Ardelia Alyadrus wearing an ITS jacket" data-alt-id="Diva Ardelia Alyadrus mengenakan jaket ITS" data-label-en="ITS jacket portrait" data-label-id="Potret jaket ITS" data-portrait-scale=".92" data-portrait-offset="0px" aria-label="ITS jacket portrait"><img src="assets/hero-professional-02.png" alt=""></button>
         </div>
       </div>
     </section>
@@ -53,9 +54,10 @@
         <li><a href="#education"><span>02</span>Education <b>→</b></a></li>
         <li><a href="#experience"><span>03</span>Experience <b>→</b></a></li>
         <li><a href="#projects"><span>04</span>Selected Projects <b>→</b></a></li>
-        <li><a href="#credentials"><span>05</span>Credentials <b>→</b></a></li>
-        <li><a href="#community"><span>06</span>Activities & Community <b>→</b></a></li>
-        <li><a href="#contact"><span>07</span>Let's Connect <b>→</b></a></li>
+        <li><a href="#awards"><span>05</span>Awards <b>→</b></a></li>
+        <li><a href="#credentials"><span>06</span>Credentials <b>→</b></a></li>
+        <li><a href="#community"><span>07</span>Activities & Community <b>→</b></a></li>
+        <li><a href="#contact"><span>08</span>Let's Connect <b>→</b></a></li>
       </ol>
     </section>
 
@@ -72,9 +74,9 @@
         <div class="toolkit__heading"><p class="eyebrow">TOOLKIT</p><h3>Tools I explore and apply.</h3></div>
         <div class="toolkit__body">
           <div class="toolkit__tabs" role="tablist" aria-label="Kategori keahlian">
-            <button class="is-active" type="button" role="tab" aria-selected="true" data-toolkit-tab="data">Data & Analysis</button>
-            <button type="button" role="tab" aria-selected="false" data-toolkit-tab="systems">Systems</button>
-            <button type="button" role="tab" aria-selected="false" data-toolkit-tab="collaboration">Collaboration</button>
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-toolkit-tab="data">Data Work</button>
+            <button type="button" role="tab" aria-selected="false" data-toolkit-tab="systems">System Delivery</button>
+            <button type="button" role="tab" aria-selected="false" data-toolkit-tab="collaboration">Communication & Coordination</button>
           </div>
           <p class="toolkit__skills" data-toolkit-output>SQL · Python · Power BI · Pentaho · ETL · Data Cleaning</p>
         </div>
@@ -82,10 +84,10 @@
     </section>
 
     <section class="section section--sand education-section" id="education">
-      <div class="section-label">02 / EDUCATION</div><div class="section-heading"><h2>Dua tempat yang membentuk cara aku belajar.</h2><p>Click a card to turn it over.</p></div>
+      <div class="section-label">02 / EDUCATION</div><div class="section-heading"><h2>Dari SMA sampai kuliah, ini yang membentukku.</h2><p>Klik kartu untuk melihat sisi lainnya.</p></div>
       <div class="education-grid">
-        <button class="education-card" type="button" aria-pressed="false"><span class="education-card__inner"><span class="education-card__front"><img src="sma.jpg" alt=""><span>2019 - 2022</span><strong>SMAN 81 Jakarta</strong><em>Click to turn over</em></span><span class="education-card__back"><span class="education-card__back-label">THE FOUNDATION</span><strong>SMAN 81 Jakarta</strong><span>Tempat awal ketertarikan pada komunikasi, organisasi, dan karya kreatif tumbuh sebelum berkembang ke bidang sistem dan teknologi.</span></span></span></button>
-        <button class="education-card" type="button" aria-pressed="false"><span class="education-card__inner"><span class="education-card__front"><span class="education-slideshow" data-education-slideshow aria-hidden="true"><img class="is-active" src="assets/its-4.jpeg" alt=""><img src="assets/its-1.jpeg" alt=""><img src="assets/its-3.jpeg" alt=""></span><span>2022 - 2026</span><strong>Institut Teknologi Sepuluh Nopember</strong><em>Click to turn over</em></span><span class="education-card__back"><span class="education-card__back-label">THE PRACTICE</span><strong>Information Systems</strong><span>Mempelajari cara menghubungkan data, proses bisnis, teknologi, dan manusia dalam satu solusi. Fokus pembelajaran yang paling membekas: analisis sistem, basis data, ERP, data warehouse dan ETL, visualisasi data, serta natural language processing.</span></span></span></button>
+        <button class="education-card" type="button" aria-pressed="false"><span class="education-card__inner"><span class="education-card__front"><img src="sma.jpg" alt=""><span>2019 - 2022</span><strong>SMAN 81 Jakarta</strong><em>Klik untuk membalik</em></span><span class="education-card__back"><span class="education-card__back-label">DASAR</span><strong>SMAN 81 Jakarta</strong><span>Tempat awal ketertarikan pada komunikasi, organisasi, dan karya kreatif tumbuh sebelum berkembang ke bidang sistem dan teknologi.</span></span></span></button>
+        <button class="education-card" type="button" aria-pressed="false"><span class="education-card__inner"><span class="education-card__front"><span class="education-slideshow" data-education-slideshow aria-hidden="true"><img class="is-active" src="assets/its-4.jpeg" alt=""><img src="assets/its-1.jpeg" alt=""><img src="assets/its-3.jpeg" alt=""></span><span>2022 - 2026</span><strong>Institut Teknologi Sepuluh Nopember</strong><em>Klik untuk membalik</em></span><span class="education-card__back"><span class="education-card__back-label">PRAKTIK</span><strong>Sistem Informasi</strong><span>Mempelajari cara menghubungkan data, proses bisnis, teknologi, dan manusia dalam satu solusi. Fokus pembelajaran yang paling membekas: analisis sistem, basis data, ERP, data warehouse dan ETL, visualisasi data, serta natural language processing.</span></span></span></button>
       </div>
     </section>
 
@@ -93,12 +95,12 @@
       <div class="section-label">03 / EXPERIENCE</div><div class="section-heading"><h2>Belajar bekerja dengan sistem, orang, dan target yang nyata.</h2><p>Dua pengalaman internship yang membentuk caraku mendokumentasikan, menguji, dan membangun sesuatu yang lebih berguna.</p></div>
       <div class="experience-list experience-list--stacked">
         <article class="experience-card experience-card--feature">
-          <div class="experience-media experience-media--certificate"><img src="assets/ide-certificate.png" alt="Sertifikat magang PT Inti Daya Energitama"></div>
-          <div class="experience-card__content"><div class="experience-card__top"><p>2025</p><span>01</span></div><p class="experience-card__status">INTERNSHIP</p><h3>Software Analyst</h3><p class="experience-card__company">PT Inti Daya Energitama</p><p>Di perusahaan yang bergerak pada software system development, intelligent mobility, serta solusi electrical, mechanical, instrument, dan control, aku mendukung dokumentasi dan quality assurance sistem. Aku mendokumentasikan struktur 5+ schema PostgreSQL untuk ScyllaX ERP dengan DBeaver, merancang ERD untuk sistem monitoring alarm pabrik, serta menyusun user manual SYPIU sepanjang 73 halaman. Aku juga membantu functional testing di staging melalui pencatatan bug, masukan teknis, dan verifikasi perbaikan.</p><ul class="tag-list tag-list--dark"><li>PostgreSQL</li><li>DBeaver</li><li>ERD</li><li>Functional Testing</li><li>Technical Documentation</li></ul></div>
+          <div class="experience-media"><img src="assets/magang-ide.jpg" alt="Dokumentasi magang PT Inti Daya Energitama"></div>
+          <div class="experience-card__content"><div class="experience-card__top"><p>2025</p><span>01</span></div><p class="experience-card__status">INTERNSHIP</p><h3>Software Analyst</h3><p class="experience-card__company">PT Inti Daya Energitama</p><p>Di IDEtama, aku mendukung dokumentasi dan quality assurance untuk sistem perangkat lunak. Aku mendokumentasikan struktur 5+ schema PostgreSQL pada ScyllaX ERP dengan DBeaver, merancang ERD sistem monitoring alarm pabrik, serta menyusun user manual SYPIU sepanjang 73 halaman. Aku juga membantu pengujian fungsional di staging melalui pencatatan temuan, masukan teknis, dan verifikasi perbaikan.</p><ul class="tag-list tag-list--dark"><li>PostgreSQL</li><li>DBeaver</li><li>ERD</li><li>Functional Testing</li><li>Technical Documentation</li></ul></div>
         </article>
         <article class="experience-card experience-card--feature">
           <div class="experience-media"><img src="assets/ahm-final-presentation.jpeg" alt="Presentasi akhir internship PT Astra Honda Motor"></div>
-          <div class="experience-card__content"><div class="experience-card__top"><p>2025</p><span>02</span></div><p class="experience-card__status">INTERNSHIP</p><h3>EPP Intern</h3><p class="experience-card__company">PT Astra Honda Motor</p><p>Aku berkontribusi pada pengembangan aplikasi asesmen karyawan berbasis Microsoft Power Apps dan Microsoft Lists untuk penilaian QnA dan Written di area EPP Analyst Assy dan Casting. Berangkat dari form asesmen arsip berbasis Excel, tim memetakan kebutuhan dan mengonfirmasi detail yang masih kurang kepada mentor. Kontribusiku mencakup UI Assessor, halaman overview asesmen, routing page dan data, rekap Admin, finishing aplikasi, serta fitur notes untuk mendukung alur input, riwayat, rekap, dan pelaporan yang lebih terpusat.</p><ul class="tag-list tag-list--dark"><li>Power Apps</li><li>Microsoft Lists</li><li>Needfinding</li><li>Process Mapping</li><li>Low-Code</li></ul></div>
+          <div class="experience-card__content"><div class="experience-card__top"><p>2025</p><span>02</span></div><p class="experience-card__status">INTERNSHIP</p><h3>Efficiency Productivity and Improvement Program Intern</h3><p class="experience-card__company">PT Astra Honda Motor</p><p>Aku berkontribusi pada digitalisasi asesmen karyawan yang sebelumnya melibatkan banyak proses manual dan berisiko human error. Melalui penggalian kebutuhan dari form asesmen arsip dan klarifikasi bersama mentor, tim mengembangkan aplikasi berbasis Microsoft Power Apps dan Microsoft Lists untuk penilaian QnA dan Written di area EPP Analyst Assy dan Casting. Kontribusiku mencakup UI Assessor, assessment overview, routing page/data, rekap Admin, finishing aplikasi, serta fitur notes untuk mendukung input, riwayat, rekap, dan pelaporan yang lebih terpusat.</p><ul class="tag-list tag-list--dark"><li>Power Apps</li><li>Microsoft Lists</li><li>Needs Analysis</li><li>Process Mapping</li><li>Low-Code Development</li></ul></div>
         </article>
       </div>
     </section>
@@ -112,36 +114,46 @@
         <button type="button" data-project-filter="forecasting">Forecasting</button>
       </div>
       <div class="project-grid">
-        <article class="project-card project-card--featured" data-project-category="research"><p class="project-card__meta">RESEARCH / NLP</p><h3>Aspect-Based Sentiment Analysis</h3><p>Skripsi yang menganalisis hampir 50.000 ulasan aplikasi Kopi Kenangan dan Fore Coffee ke lima aspek: Taste, Service, Price, Application, dan Promotion. Menggunakan LDA dan BERTopic untuk eksplorasi topik, lalu Qwen2.5-7B dan IndoBERT-GRU untuk klasifikasi sentimen.</p><p class="project-outcome">~50K reviews · 5 aspects · 0.7624 Macro-F1</p><ul class="tag-list"><li>Python</li><li>BERTopic</li><li>LDA</li><li>Qwen2.5-7B</li><li>IndoBERT-GRU</li></ul></article>
-        <article class="project-card project-card--moss" data-project-category="data"><p class="project-card__meta">DATA / BI</p><h3>Academic Performance Analytics</h3><p>Proyek akademik tim yang memodelkan data performa akademik menjadi 7 dimensi dan 2 fact table. Data diproses melalui alur ETL di Pentaho dan divisualisasikan dalam dashboard Power BI untuk membaca pola performa serta pengulangan mata kuliah.</p><p class="project-outcome">7 dimensions · 2 fact tables · 46.95% low performance</p><ul class="tag-list tag-list--dark"><li>Pentaho</li><li>Power BI</li><li>ETL</li><li>Data Warehouse</li></ul></article>
-        <article class="project-card project-card--coral" data-project-category="forecasting"><p class="project-card__meta">FORECASTING</p><h3>Airport Passenger Forecasting</h3><p>Proyek forecasting akademik dengan 60 observasi bulanan penumpang Bandara Hang Nadim periode 2019-2023. Tim membandingkan ARIMA, SARIMA, dan hybrid SARIMA-LSTM untuk memahami trade-off antarmodel dalam proyeksi volume penumpang.</p><p class="project-outcome">60 months · 3 models · 8.41% best reported MAPE</p><ul class="tag-list tag-list--dark"><li>Python</li><li>ARIMA</li><li>SARIMA</li><li>LSTM</li></ul></article>
+        <article class="project-card project-card--featured" data-project-category="research"><p class="project-card__meta">RESEARCH / NLP</p><h3>Aspect-Based Sentiment Analysis</h3><p class="project-outcome">~50K reviews · 5 aspects · 0.7624 Macro-F1</p><p>Skripsi yang menganalisis hampir 50.000 ulasan aplikasi Kopi Kenangan dan Fore Coffee ke lima aspek: Taste, Service, Price, Application, dan Promotion. Menggunakan LDA dan BERTopic untuk eksplorasi topik, lalu Qwen2.5-7B dan IndoBERT-GRU untuk klasifikasi sentimen.</p><ul class="tag-list"><li>Python</li><li>BERTopic</li><li>LDA</li><li>Qwen2.5-7B</li><li>IndoBERT-GRU</li></ul></article>
+        <article class="project-card project-card--moss" data-project-category="data"><p class="project-card__meta">DATA / BI</p><h3>Academic Performance Analytics</h3><p class="project-outcome">7 dimensions · 2 fact tables · 46.95% low performance</p><p>Proyek akademik tim yang memodelkan data performa akademik menjadi 7 dimensi dan 2 fact table. Data diproses melalui alur ETL di Pentaho dan divisualisasikan dalam dashboard Power BI untuk membaca pola performa serta pengulangan mata kuliah.</p><ul class="tag-list tag-list--dark"><li>Pentaho</li><li>Power BI</li><li>ETL</li><li>Data Warehouse</li></ul></article>
+        <article class="project-card project-card--coral" data-project-category="forecasting"><p class="project-card__meta">FORECASTING</p><h3>Airport Passenger Forecasting</h3><p class="project-outcome">60 months · 3 models · 8.41% best reported MAPE</p><p>Proyek forecasting akademik dengan 60 observasi bulanan penumpang Bandara Hang Nadim periode 2019-2023. Tim membandingkan ARIMA, SARIMA, dan hybrid SARIMA-LSTM untuk memahami trade-off antarmodel dalam proyeksi volume penumpang.</p><ul class="tag-list tag-list--dark"><li>Python</li><li>ARIMA</li><li>SARIMA</li><li>LSTM</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section section--sand awards-section" id="awards">
+      <div class="section-label">05 / AWARDS</div>
+      <div class="section-heading"><h2>Milestones that shaped how I learn and contribute.</h2><p>Some came from close teamwork, some from making sense of a difficult case, and some from showing up and finishing the work.</p></div>
+      <div class="awards-grid">
+        <article class="award-card award-card--feature"><img src="assets/award-kota-cerdas.jpg" alt="Dokumentasi awarding IS Competition 2023"><div><p class="award-card__label">IS COMPETITION 2023</p><h3>1st Place - Kota Cerdas</h3><p class="award-card__meta">Team Vitakastara</p><p>Menerima penghargaan Juara 1 melalui proyek ResQ Emergency Smart Traffic Light yang mengusulkan konsep prioritas lalu lintas untuk kendaraan darurat di Surabaya.</p><ul class="tag-list tag-list--dark"><li>Competition</li><li>Smart City</li><li>Teamwork</li></ul></div></article>
+        <article class="award-card"><img src="assets/award-best-dwdg.jpeg" alt="Penghargaan Best DWDG Case"><div><p class="award-card__label">PURPOSE LED 1 · 2024</p><h3>Best DWDG Case</h3><p class="award-card__meta">Do Well Do Good Future Leaders ITS</p><p>Pengakuan atas analisis PT Astra International menggunakan 10 indikator DWDG, yang dirangkum dalam laporan analisis dan rekomendasi.</p><ul class="tag-list tag-list--dark"><li>Case Analysis</li><li>Research</li><li>Recommendation</li></ul></div></article>
+        <article class="award-card award-card--type"><img src="assets/award-imotion-mmc.png" alt="Cover pitch deck IMOTION Mini Marketing Case"><div><p class="award-card__label">RANK 9 OF 42 TEAMS · 2025</p><h3>Top 10 - IMOTION Mini Marketing Case</h3><p class="award-card__meta">Team Three Musketeers · Jago</p><p>Meraih peringkat 9 dari 42 tim melalui proposal campaign untuk meningkatkan awareness dan penggunaan fitur Kantong Bersama Jago dalam kehidupan sehari-hari.</p><ul class="tag-list tag-list--dark"><li>Marketing Case</li><li>Campaign Strategy</li><li>Consumer Insight</li></ul></div></article>
       </div>
     </section>
 
     <section class="section section--paper credentials-section" id="credentials">
-      <div class="section-label">05 / CREDENTIALS</div><div class="section-heading"><h2>Rekam jejak belajar yang aku pilih dengan sengaja.</h2><p>Credential dan course completion yang merekam fokus belajar sepanjang perjalanan.</p></div>
+      <div class="section-label">06 / CREDENTIALS</div><div class="section-heading"><h2>Rekam jejak belajar yang aku pilih dengan sengaja.</h2><p>Credential dan course completion yang merekam fokus belajar sepanjang perjalanan.</p></div>
       <div class="credential-list">
-        <article class="credential-card"><div class="credential-card__image"><img src="assets/credential-datacamp.png" alt="Associate Data Analyst credential dari DataCamp"></div><p>2026</p><h3>Associate Data Analyst</h3><span>DataCamp</span></article>
-        <article class="credential-card"><div class="credential-card__image"><img src="assets/credential-devnet.png" alt="DevNet Associate certificate dari Cisco Networking Academy"></div><p>2025</p><h3>DevNet Associate</h3><span>Cisco Networking Academy</span></article>
-        <article class="credential-card"><div class="credential-card__image"><img src="assets/credential-sap.png" alt="Introduction to SAP S/4HANA with GBI 4.2 certificate"></div><p>2024</p><h3>Introduction to SAP S/4HANA with GBI 4.2</h3><span>SAP University Alliances</span></article>
+        <article class="credential-card"><button class="credential-card__image" type="button" data-lightbox-src="assets/credential-datacamp.png" data-lightbox-alt="Associate Data Analyst credential from DataCamp"><img src="assets/credential-datacamp.png" alt="Associate Data Analyst credential dari DataCamp"></button><p>2026</p><h3>Associate Data Analyst</h3><span>DataCamp</span></article>
+        <article class="credential-card"><button class="credential-card__image" type="button" data-lightbox-src="assets/credential-devnet.png" data-lightbox-alt="DevNet Associate certificate from Cisco Networking Academy"><img src="assets/credential-devnet.png" alt="DevNet Associate certificate dari Cisco Networking Academy"></button><p>2025</p><h3>DevNet Associate</h3><span>Cisco Networking Academy</span></article>
+        <article class="credential-card"><button class="credential-card__image" type="button" data-lightbox-src="assets/credential-sap.png" data-lightbox-alt="Introduction to SAP S/4HANA with GBI 4.2 certificate"><img src="assets/credential-sap.png" alt="Introduction to SAP S/4HANA with GBI 4.2 certificate"></button><p>2024</p><h3>Introduction to SAP S/4HANA with GBI 4.2</h3><span>SAP University Alliances</span></article>
       </div>
     </section>
 
     <section class="section section--ink community-section" id="community">
-      <div class="section-label section-label--light">06 / ACTIVITIES & COMMUNITY</div><div class="section-heading section-heading--light"><h2>Di luar kelas dan kantor, aku belajar memimpin, menyusun cerita, dan bekerja bersama banyak orang.</h2><p>Galeri yang terus bertumbuh dari kegiatan kreatif, organisasi, dan kolaborasi.</p></div>
+      <div class="section-label section-label--light">07 / ACTIVITIES & COMMUNITY</div><div class="section-heading section-heading--light"><h2>Di luar kelas dan kantor, aku belajar memimpin, menyusun cerita, dan bekerja bersama banyak orang.</h2><p>Galeri yang terus bertumbuh dari kegiatan kreatif, organisasi, dan kolaborasi.</p></div>
       <div class="community-grid">
-        <figure class="community-card community-card--large"><img src="ise.png" alt="Dokumentasi aktivitas Information Systems Expo"><figcaption><strong>ISE! 2024</strong><span>Vice Head of ICON · 3 flagship programs · 300+ total participants</span></figcaption></figure>
-        <figure class="community-card"><img src="pangarsa1.png" alt="Visual podcast Pangarsa"><figcaption><strong>Pangarsa</strong><span>Creative communication archive</span></figcaption></figure>
-        <figure class="community-card"><img src="Song-fess-1.png" alt="Karya desain media sosial"><figcaption><strong>Information Media</strong><span>Head of Information Media, HMSI ITS · 25 members · 150+ contents · 6 platforms</span></figcaption></figure>
-        <figure class="community-card"><img src="negasi.jpg" alt="Dokumentasi kegiatan organisasi"><figcaption><strong>Campus Moments</strong><span>Collaboration, communication, and community</span></figcaption></figure>
+        <figure class="community-card community-card--large"><span class="community-slideshow" data-community-slideshow aria-hidden="true"><img class="is-active" src="assets/community-ise-02.jpeg" alt=""><img src="assets/community-ise-03.jpeg" alt=""><img src="assets/community-ise-01.jpeg" alt=""></span><figcaption><strong>ISE! 2024</strong><span>Vice Head of ICON · 3 flagship programs · 300+ total participants</span></figcaption></figure>
+        <figure class="community-card community-card--large"><span class="community-slideshow" data-community-slideshow aria-hidden="true"><img class="is-active" src="assets/community-dwdg-01.jpg" alt=""><img src="assets/community-dwdg-02.jpeg" alt=""></span><figcaption><strong>DWDG Future Leaders</strong><span>Student Score 3.6 · Training Attendance 87.5%</span></figcaption></figure>
+        <figure class="community-card community-card--large"><span class="community-slideshow" data-community-slideshow aria-hidden="true"><img class="is-active" src="assets/community-im-01.jpeg" alt=""><img src="assets/community-im-02.jpeg" alt=""><img src="assets/community-im-03.jpg" alt=""><img src="assets/community-im-04.jpg" alt=""><img src="assets/community-im-05.jpg" alt=""></span><figcaption><strong>Information Media</strong><span>Head of Information Media, HMSI ITS · 25 members · 150+ contents · 6 platforms</span></figcaption></figure>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
-      <p class="eyebrow">07 / LET'S CONNECT</p><h2>Punya ide, pertanyaan, atau kesempatan untuk belajar dan berkarya bersama?</h2><p>Aku senang bertukar cerita tentang data, teknologi, dan hal-hal yang bisa kita buat berguna.</p>
+      <p class="eyebrow">08 / LET'S CONNECT</p><h2>Punya ide, pertanyaan, atau kesempatan untuk belajar dan berkarya bersama?</h2><p>Aku senang bertukar cerita tentang data, teknologi, dan hal-hal yang bisa kita buat berguna.</p>
       <div class="contact-links"><a href="https://www.linkedin.com/in/divardl/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/divaardeliaa" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
+  <dialog class="lightbox" data-lightbox><button class="lightbox__close" type="button" aria-label="Close image">Close</button><img src="" alt="" data-lightbox-image></dialog>
   <footer class="site-footer"><a class="brand" href="#top">DAA<span>.</span></a><p>A living record of work, learning, and curiosity.</p><p>© <span data-current-year></span> Diva Ardelia Alyadrus</p></footer>
   <script src="index.js"></script>
 </body>
