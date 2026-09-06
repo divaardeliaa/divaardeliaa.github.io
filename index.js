@@ -75,6 +75,23 @@ educationCards.forEach((card) => {
   });
 });
 
+const educationSlideshows = document.querySelectorAll("[data-education-slideshow]");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+educationSlideshows.forEach((slideshow) => {
+  const slides = slideshow.querySelectorAll("img");
+  let activeIndex = 0;
+
+  if (slides.length < 2 || prefersReducedMotion) return;
+
+  window.setInterval(() => {
+    if (document.hidden) return;
+    slides[activeIndex].classList.remove("is-active");
+    activeIndex = (activeIndex + 1) % slides.length;
+    slides[activeIndex].classList.add("is-active");
+  }, 3500);
+});
+
 if (yearTarget) yearTarget.textContent = new Date().getFullYear();
 
 const toolkitSkills = {
