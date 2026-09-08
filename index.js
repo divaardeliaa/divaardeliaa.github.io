@@ -47,10 +47,13 @@ const contentPairs = [
   ["Research & NLP", "Riset & NLP"],
   ["Data & BI", "Data & BI"],
   ["Forecasting", "Peramalan"],
+  ["UX & Product", "UX & Produk"],
   ["RESEARCH / NLP", "RISET / NLP"],
+  ["UX / PRODUCT", "UX / PRODUK"],
   ["~50K reviews · 5 aspects · 0.7624 Macro-F1", "~50K ulasan · 5 aspek · 0.7624 Macro-F1"],
   ["7 dimensions · 2 fact tables · 46.95% low performance", "7 dimensi · 2 fact table · 46.95% performa rendah"],
   ["60 months · 3 models · 8.41% best reported MAPE", "60 bulan · 3 model · 8.41% MAPE terbaik"],
+  ["6 interviews · Lo-Fi to Hi-Fi · product flow redesign", "6 wawancara · Lo-Fi ke Hi-Fi · redesign alur produk"],
   ["05 / AWARDS", "05 / PENGHARGAAN"],
   ["A few milestones that remind me to keep trying.", "Beberapa pencapaian yang jadi pengingat untuk terus mencoba."],
   ["IS COMPETITION 2023", "IS COMPETITION 2023"],
@@ -114,7 +117,17 @@ const longTranslations = [
   ["Research, recommendations, and collaboration", "Riset, rekomendasi, dan kolaborasi"],
   ["An undergraduate thesis on Kopi Kenangan and Fore Coffee app reviews mapped into five aspects: Taste, Service, Price, Application, and Promotion. The project combined topic exploration with LDA and BERTopic, followed by sentiment classification using Qwen2.5-7B and IndoBERT-GRU.", "Skripsi tentang ulasan aplikasi Kopi Kenangan dan Fore Coffee yang dipetakan ke lima aspek: Taste, Service, Price, Application, dan Promotion. Proyek ini menggabungkan eksplorasi topik dengan LDA dan BERTopic, lalu klasifikasi sentimen menggunakan Qwen2.5-7B dan IndoBERT-GRU."],
   ["A team academic project that turned student performance data into a data warehouse model, ETL workflow, and Power BI dashboard. From there, performance patterns and repeated courses could be read in a more structured way.", "Proyek akademik tim yang mengolah data performa mahasiswa menjadi model data warehouse, alur ETL, dan dashboard Power BI. Dari sana, pola performa dan pengulangan mata kuliah bisa dibaca lebih terstruktur."],
-  ["An academic forecasting project comparing ARIMA, SARIMA, and hybrid SARIMA-LSTM to see each model's trade-offs in projecting passenger volume at Hang Nadim Airport.", "Proyek forecasting akademik yang membandingkan ARIMA, SARIMA, dan hybrid SARIMA-LSTM untuk melihat trade-off model dalam memproyeksikan volume penumpang Bandara Hang Nadim."]
+  ["An academic forecasting project comparing ARIMA, SARIMA, and hybrid SARIMA-LSTM to see each model's trade-offs in projecting passenger volume at Hang Nadim Airport.", "Proyek forecasting akademik yang membandingkan ARIMA, SARIMA, dan hybrid SARIMA-LSTM untuk melihat trade-off model dalam memproyeksikan volume penumpang Bandara Hang Nadim."],
+  ["An academic UX/product redesign project for Mamikos focused on trust, search accuracy, and communication between renters and property owners. Its main deliverables include a hi-fi prototype, documentation website, and video demo.", "Proyek akademik UX/product redesign untuk Mamikos yang berfokus pada trust, akurasi pencarian, dan komunikasi antara pencari kos dan pemilik. Deliverable utamanya mencakup prototype hi-fi, website dokumentasi, dan video demo."],
+  ["See More", "Lihat Dokumentasi"],
+  ["View Poster", "Lihat Poster"],
+  ["View GitHub", "Buka GitHub"],
+  ["Full Report", "Laporan Lengkap"],
+  ["View Dashboard", "Buka Dashboard"],
+  ["Project Folder Soon", "Folder Proyek Menyusul"],
+  ["View UX Site", "Buka Situs UX"],
+  ["Prototype", "Prototype"],
+  ["Video Demo", "Video Demo"]
 ];
 
 const translations = new Map();
